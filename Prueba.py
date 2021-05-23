@@ -21,11 +21,7 @@ class PruebaTest(unittest.TestCase):
     def test_0001(self):
         time.sleep(3)
         driver = self.driver
-        randomx = random.randint(3, 9)
-       # user = driver.find_element_by_id('txtUserName')
-        #user.send_keys('juan2@bluesoft.com.co')
-        #password = driver.find_element_by_id('txtPassword')
-        #password.send_keys('Juan2_2020')
+        randomx = random.randint(3, 999)
         button = driver.find_element_by_xpath('//*[@id="header"]/div[2]/div/div/nav/div[1]/a')
         button.click()
         mail = driver.find_element_by_xpath('//*[@id="email_create"]')
